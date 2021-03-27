@@ -364,16 +364,21 @@
                                     <use href="./img/sprite/sprite.svg#icon-linkedin"></use>
                                 </svg></a>
                         </li>
-                    </ul>
-                        
+                    </ul>  
                 </div>
+            <label class="social-form-field">
+                <p>Подпишитесь на рассылку</p>
+                <span class="social-form-input-wrapper">
+                    <input type="email" name="user-email" class="social-form-inpyt" placeholder="E-mail" required>
+                </span>
+            </label>
 
             </address>
         </div>
         
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>  -->
+    <div class="backdrop is-hidden" data-modal> 
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-btn-icon" width="18" height="18">
@@ -417,15 +422,15 @@
                         Комментарий
                         <textarea name="uaer-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                     </label>
-                    <input type="checkbox" name="user-term" class="modal-form-term">
-                    <label for="" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden">
+                    <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp; <a class="contract" href="">Условия договора</a></label>
                     <button type="submit" class="modal-form-btn">Отправить</button>
 
                 </form>
         </div>
     </div>
     
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
